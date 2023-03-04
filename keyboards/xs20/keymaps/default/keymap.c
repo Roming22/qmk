@@ -3,7 +3,7 @@
 
 #include QMK_KEYBOARD_H
 
-#include "keys.h"
+#include "keys/definition.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
@@ -18,13 +18,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [1] = LAYOUT(
         // Left
-        KC_GRV,     KC_BSLS,    KC_UNDS,
-        KC_HASH,    KC_DLR,     KC_EXLM,
-                    _______,    _______,    _______,
+        L1_L1,  L1_L1,  L1_L2,
+        L1_L3,  L1_L4,  L1_L5,
+                L1_L6,  L1_L7,  L1_L8,
         // Right
-                    KC_MINS,    KC_SLSH,    KC_EQL,
-                    KC_DOT,     KC_COMM,    KC_QUOT,
-        _______,    TO(0),      _______
+                L1_R0,  L1_R1,  L1_R2,
+                L1_R3,  L1_R4,  L1_R5,
+        L1_R6,  L1_R7,  L1_R8
     ),
     [2] = LAYOUT(
         // Left
@@ -48,4 +48,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
-#include "combos.h"
+#include "combos/definition.h"
