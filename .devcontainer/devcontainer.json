@@ -10,13 +10,14 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "GitHub.vscode-pull-request-github",
-                "timonwong.shellcheck",
-                "yzhang.markdown-all-in-one"
-            ]
+				"GitHub.vscode-pull-request-github",
+				"timonwong.shellcheck",
+				"yzhang.markdown-all-in-one",
+				"ms-vscode.cpptools-extension-pack"
+			]
         }
     },
-    "postCreateCommand": "qmk setup -H /workspaces/qmk_firmware --yes && ln -sf /workspaces/qmk/keyboards/* /workspaces/qmk_firmware/keyboards/",
+    "postCreateCommand": "qmk setup -H /workspaces/firmware --yes",
     "runArgs": [
         "--userns=keep-id",
         "--volume=${localWorkspaceFolder}:/workspaces/qmk:Z"
