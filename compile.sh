@@ -12,6 +12,8 @@ QMK_DIR="/workspaces/firmware"
 set -x
 ln -sf /workspaces/qmk/keyboards/* /workspaces/firmware/keyboards/
 reset
+qmk info -kb "$1" -l
+qmk lint -kb "$1"
 qmk compile -kb "$1" -km default
 for EXT in bin hex uf2; do
     find "$PROJECT_DIR" -name \*."$EXT" -delete
