@@ -9,11 +9,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         // Left
         LSFT_T(L0_L0),  LALT_T(L0_L1),  LCTL_T(L0_L2),
-        L0_L3,          L0_L4,          L0_L5,
+        LT(3, L0_L3),   LT(2, L0_L4),   LT(1, L0_L5),
                         L0_L6,          L0_L7,          L0_L8,
         // Right
                 RCTL_T(L0_R0),  RALT_T(L0_R1),  RSFT_T(L0_R2),
-                L0_R3,          L0_R4,          L0_R5,
+                LT(1, L0_R3),   LT(2, L0_R4),   LT(3, L0_R5),
         L0_R6,  L0_R7,          L0_R8
     ),
     [1] = LAYOUT(

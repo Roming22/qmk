@@ -19,6 +19,7 @@ while true; do
             sleep 1
         done
         echo "OK"
+        tput bel
     fi
     sleep 1
 done
