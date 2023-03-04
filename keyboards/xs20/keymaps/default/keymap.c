@@ -8,33 +8,33 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         // Left
-        L0_L0,  L0_L1,  L0_L2,
-        L0_L3,  L0_L4,  L0_L5,
-                L0_L6,  L0_L7,  L0_L8,
+        LSFT_T(L0_L0),  LALT_T(L0_L1),  LCTL_T(L0_L2),
+        L0_L3,          L0_L4,          L0_L5,
+                        L0_L6,          L0_L7,          L0_L8,
         // Right
-                L0_R0,  L0_R1,  L0_R2,
-                L0_R3,  L0_R4,  L0_R5,
-        L0_R6,  L0_R7,  L0_R8
+                RCTL_T(L0_R0),  RALT_T(L0_R1),  RSFT_T(L0_R2),
+                L0_R3,          L0_R4,          L0_R5,
+        L0_R6,  L0_R7,          L0_R8
     ),
     [1] = LAYOUT(
         // Left
-        L1_L1,  L1_L1,  L1_L2,
-        L1_L3,  L1_L4,  L1_L5,
-                L1_L6,  L1_L7,  L1_L8,
+        LSFT_T(L1_L1),  LALT_T(L1_L1),  LCTL_T(L1_L2),
+        L1_L3,          L1_L4,          L1_L5,
+                        L1_L6,          L1_L7,          L1_L8,
         // Right
-                L1_R0,  L1_R1,  L1_R2,
-                L1_R3,  L1_R4,  L1_R5,
-        L1_R6,  L1_R7,  L1_R8
+                RCTL_T(L1_R0),  RALT_T(L1_R1),  RSFT_T(L1_R2),
+                L1_R3,          L1_R4,          L1_R5,
+        L1_R6,  L1_R7,          L1_R8
     ),
     [2] = LAYOUT(
         // Left
-        L2_L2,  L2_L1,  L2_L2,
-        L2_L3,  L2_L4,  L2_L5,
-                L2_L6,  L2_L7,  L2_L8,
+        LSFT_T(L2_L2),  LALT_T(L2_L1),  LCTL_T(L2_L2),
+        L2_L3,          L2_L4,          L2_L5,
+                        L2_L6,          L2_L7,          L2_L8,
         // Right
-                L2_R0,  L2_R1,  L2_R2,
-                L2_R3,  L2_R4,  L2_R5,
-        L2_R6,  L2_R7,  L2_R8
+                RCTL_T(L2_R0),  RALT_T(L2_R1),  RSFT_T(L2_R2),
+                L2_R3,          L2_R4,          L2_R5,
+        L2_R6,  L2_R7,          L2_R8
     ),
     [3] = LAYOUT(
         // Left
