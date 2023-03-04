@@ -3,5 +3,8 @@
 # Required for RP2040
 WS2812_DRIVER = vendor
 
-# Enable split
+# Enable serial communication for split
 SERIAL_DRIVER = vendor
+
+# Enable combos
+COMBO_ENABLE = yes
