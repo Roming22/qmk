@@ -8,3 +8,4 @@ SERIAL_DRIVER = vendor
 
 # Enable combos
 COMBO_ENABLE = yes
+KEY_OVERRIDE_ENABLE = yes
