@@ -18,3 +18,6 @@
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
+
+// Toggle CAPS_WORD by pressing the 2 shift keys
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
