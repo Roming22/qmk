@@ -5,8 +5,8 @@
     "bootloader": "rp2040",
     "matrix_pins": {
         "rows": [
-            "GP5",
             "GP6",
+            "GP7",
             "GP9"
         ],
         "cols": [
