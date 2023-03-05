@@ -5,7 +5,7 @@
 
 // This globally defines all key overrides to be used
 const key_override_t **key_overrides = (const key_override_t *[]){
-    &circumflex_key_override,
+    // &circumflex_key_override,
     &at_key_override,
     &ampersand_key_override,
     &question_key_override,
