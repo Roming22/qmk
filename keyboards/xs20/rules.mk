@@ -7,5 +7,5 @@ WS2812_DRIVER = vendor
 SERIAL_DRIVER = vendor
 
 # Enable combos
-COMBO_ENABLE = yes
+# COMBO_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes

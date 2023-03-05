@@ -3,10 +3,14 @@
 
 // Keys definition
 
+// DEBUG
+// const int L1_L2 = KC_UNDERSCORE; // This works OK
+// None of the ModTap keys get overrided correctly
+
 // Symbol keys
 const int L1_L0 = LSFT_T(KC_GRAVE);
 const int L1_L1 = LALT_T(KC_BACKSLASH);
-const int L1_L2 = LCTL_T(KC_UNDERSCORE);
+const int L1_L2 = LCTL_T(KC_UNDERSCORE);  // This outputs KC_MINUS
 const int L1_L3 = KC_HASH;
 const int L1_L4 = KC_DOLLAR;
 const int L1_L5 = KC_EXCLAIM;
