@@ -17,7 +17,6 @@
 			]
         }
     },
-    "postCreateCommand": "qmk setup -H /workspaces/firmware --yes",
     "runArgs": [
         "--userns=keep-id",
         "--volume=${localWorkspaceFolder}:/workspaces/qmk"

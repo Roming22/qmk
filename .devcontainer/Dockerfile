@@ -22,5 +22,6 @@ ENV PATH "/home/user/.local/bin:$PATH"
 RUN sudo chmod +r /etc/udev/rules.d/50-qmk.rules \
     && sudo dnf install -y git python3 python3-pip \
     && pip install --user qmk
-#RUN qmk setup -H /workspaces/firmware --yes
+RUN qmk setup -H /workspaces/firmware --yes
 WORKDIR /workspaces
+
