@@ -19,3 +19,4 @@ for EXT in bin hex uf2; do
     find "$PROJECT_DIR" -name \*."$EXT" -delete
     find "$QMK_DIR" -name \*."$EXT" -exec mv \{\} "$PROJECT_DIR" \;
 done
+tput bel

@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [1] = LAYOUT(
         // Left
-        L1_L1,  L1_L1,  L1_L2,
+        L1_L0,  L1_L1,  L1_L2,
         L1_L3,  L1_L4,  L1_L5,
                 L1_L6,  L1_L7,  L1_L8,
         // Right
@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [2] = LAYOUT(
         // Left
-        L2_L2,  L2_L1,  L2_L2,
+        L2_L0,  L2_L1,  L2_L2,
         L2_L3,  L2_L4,  L2_L5,
                 L2_L6,  L2_L7,  L2_L8,
         // Right
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [5] = LAYOUT(
         // Left
-        L1_L1,  L1_L1,  L1_L2,
+        L1_L0,  L1_L1,  L1_L2,
         L1_L3,  L1_L4,  L1_L5,
                 L1_L6,  L1_L7,  L1_L8,
         // Right
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [7] = LAYOUT(
         // Left
-        L2_L2,  L2_L1,  L2_L2,
+        L2_L0,  L2_L1,  L2_L2,
         L2_L3,  L2_L4,  L2_L5,
                 L2_L6,  L2_L7,  L2_L8,
         // Right
@@ -108,4 +108,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 
+#ifdef COMBO_ENABLE
 #include "combos/definition.h"
+#endif
+#ifdef KEY_OVERRIDE_ENABLE
+#include "overrides/definition.h"
+#endif
