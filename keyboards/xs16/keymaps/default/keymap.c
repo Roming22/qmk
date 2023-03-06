@@ -8,43 +8,43 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         // Left
-        L0_L0,  L0_L1,  L0_L2,
-        L0_L3,  L0_L4,  L0_L5,
-                L0_L6,  L0_L7,  L0_L8,
+        LTR0,   LTM0,   LTI0,
+        LHR0,   LHM0,   LHI0,
+                LT00,   LT10,   LT20,
         // Right
-                L0_R0,  L0_R1,  L0_R2,
-                L0_R3,  L0_R4,  L0_R5,
-        L0_R6,  L0_R7,  L0_R8
+                RTI0,   RTM0,   RTR0,
+                RHI0,   RHM0,   RHR0,
+        RT20,   RT10,   RT00
     ),
     [1] = LAYOUT(
         // Left
-        L1_L0,  L1_L1,  L1_L2,
-        L1_L3,  L1_L4,  L1_L5,
-                L1_L6,  L1_L7,  L1_L8,
+        LTR1,   LTM1,   LTI1,
+        LHR1,   LHM1,   LHI1,
+                _______,_______,_______,
         // Right
-                L1_R0,  L1_R1,  L1_R2,
-                L1_R3,  L1_R4,  L1_R5,
-        L1_R6,  L1_R7,  L1_R8
+                RTI1,   RTM1,   RTR1,
+                RHI1,   RHM1,   RHR1,
+        _______,_______,RT01
     ),
     [2] = LAYOUT(
         // Left
-        L2_L0,  L2_L1,  L2_L2,
-        L2_L3,  L2_L4,  L2_L5,
-                L2_L6,  L2_L7,  L2_L8,
+        LTR2,   LTM2,   LTI2,
+        LHR2,   LHM2,   LHI2,
+                _______,_______,_______,
         // Right
-                L2_R0,  L2_R1,  L2_R2,
-                L2_R3,  L2_R4,  L2_R5,
-        L2_R6,  L2_R7,  L2_R8
+                RTI2,   RTM2,    RTR2,
+                RHI2,   RHM2,   RHR2,
+        _______,_______,RT02
     ),
     [3] = LAYOUT(
         // Left
-        L3_L0,  L3_L1,  L3_L2,
-        L3_L3,  L3_L4,  L3_L5,
-                L3_L6,  L3_L7,  L3_L8,
+        LTR3,   LTM3,   LTI3,
+        LHR3,   LHM3,   LHI3,
+                _______,_______,_______,
         // Right
-                L3_R0,  L3_R1,  L3_R2,
-                L3_R3,  L3_R4,  L3_R5,
-        L3_R6,  L3_R7,  L3_R8
+                RTI3,   RTM3,   RTR3,
+                RHI3,   RHM3,   RHR3,
+        _______,_______,RT03
     ),
     [4] = LAYOUT(
         // Left
@@ -52,15 +52,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,  KC_NO,  _______,
                 KC_NO,  KC_NO,  KC_NO,
         // Right
-                L1_R0,  L1_R1,  L1_R2,
-                L1_R3,  L1_R4,  L1_R5,
+                RTI1,   RTM1,   RTR1,
+                RHI1,   RHM1,   RHR1,
         _______,_______,TO(1)
     ),
     [5] = LAYOUT(
         // Left
-        L1_L0,  L1_L1,  L1_L2,
-        L1_L3,  L1_L4,  L1_L5,
-                L1_L6,  L1_L7,  L1_L8,
+        LTR1,   LTM1,   LTI1,
+        LHR1,   LHM1,   LHI1,
+                _______,_______,_______,
         // Right
                 KC_NO,  KC_NO,  KC_NO,
                 KC_NO,  KC_NO,  KC_NO,
@@ -72,15 +72,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,  _______,KC_NO,
                 KC_NO,  KC_NO,      KC_NO,
         // Right
-                L2_R0,  L2_R1,  L2_R2,
-                L2_R3,  L2_R4,  L2_R5,
+                RTI2,   RTM2,    RTR2,
+                RHI2,   RHM2,   RHR2,
         _______,_______,TO(2)
     ),
     [7] = LAYOUT(
         // Left
-        L2_L0,  L2_L1,  L2_L2,
-        L2_L3,  L2_L4,  L2_L5,
-                L2_L6,  L2_L7,  L2_L8,
+        LTR2,   LTM2,   LTI2,
+        LHR2,   LHM2,   LHI2,
+                _______,_______,_______,
         // Right
                 KC_NO,  KC_NO,  KC_NO,
                 KC_NO,  KC_NO,  KC_NO,
@@ -92,15 +92,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,  _______,KC_NO,  
                 KC_NO,  KC_NO,  KC_NO,
         // Right
-                L3_R0,  L3_R1,  L3_R2,
-                L3_R3,  L3_R4,  L3_R5,
+                RTI3,   RTM3,   RTR3,
+                RHI3,   RHM3,   RHR3,
         _______,_______,TO(3)
     ),
     [9] = LAYOUT(
         // Left
-        L3_L0,  L3_L1,  L3_L2,
-        L3_L3,  L3_L4,  L3_L5,
-                L3_L6,  L3_L7,  L3_L8,
+        LTR3,   LTM3,   LTI3,
+        LHR3,   LHM3,   LHI3,
+                _______,_______,_______,
         // Right
                 KC_NO,  KC_NO,  KC_NO,
                 KC_NO,  KC_NO,  KC_NO,
