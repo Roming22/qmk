@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [4] = LAYOUT(
         // Left
-        KC_NO,  KC_NO,  KC_NO,
+        KC_LSFT,KC_LALT,KC_LCTL,
         KC_NO,  KC_NO,  _______,
                 KC_NO,  KC_NO,  KC_NO,
         // Right
@@ -62,13 +62,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LHR1,   LHM1,   LHI1,
                 _______,_______,_______,
         // Right
-                KC_NO,  KC_NO,  KC_NO,
+                KC_RCTL,KC_RALT,KC_RSFT,
                 KC_NO,  KC_NO,  KC_NO,
         _______,_______,TO(1)
     ),
     [6] = LAYOUT(
         // Left
-        KC_NO,  KC_NO,  KC_NO,
+        KC_LSFT,KC_LALT,KC_LCTL,
         KC_NO,  _______,KC_NO,
                 KC_NO,  KC_NO,      KC_NO,
         // Right
@@ -82,13 +82,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LHR2,   LHM2,   LHI2,
                 _______,_______,_______,
         // Right
-                KC_NO,  KC_NO,  KC_NO,
+                KC_RCTL,KC_RALT,KC_RSFT,
                 KC_NO,  KC_NO,  KC_NO,
         _______,_______,TO(2)
     ),
     [8] = LAYOUT(
         // Left
-        KC_NO,  KC_NO,  KC_NO,
+        KC_LSFT,KC_LALT,KC_LCTL,
         KC_NO,  _______,KC_NO,  
                 KC_NO,  KC_NO,  KC_NO,
         // Right
@@ -102,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         LHR3,   LHM3,   LHI3,
                 _______,_______,_______,
         // Right
-                KC_NO,  KC_NO,  KC_NO,
+                KC_RCTL,KC_RALT,KC_RSFT,
                 KC_NO,  KC_NO,  KC_NO,
         _______,_______,TO(3)
     ),
