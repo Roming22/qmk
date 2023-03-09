@@ -114,3 +114,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef KEY_OVERRIDE_ENABLE
 #include "overrides/definition.h"
 #endif
+#ifdef RGBLIGHT_LAYERS
+#include "leds/definition.h"
+#endif
