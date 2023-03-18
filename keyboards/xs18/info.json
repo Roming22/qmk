@@ -1,6 +1,6 @@
 {
     "manufacturer": "hillside46",
-    "keyboard_name": "xs20",
+    "keyboard_name": "xs18",
     "processor": "RP2040",
     "bootloader": "rp2040",
     "matrix_pins": {
