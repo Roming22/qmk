@@ -4,26 +4,26 @@
     "name": "QMK",
     "build": {
         "context": "..",
-        "dockerfile": "Dockerfile"
+        "dockerfile": "../tools/container/Dockerfile"
     },
     // Add the IDs of extensions you want installed when the container is created.
     "customizations": {
         "vscode": {
             "extensions": [
-				"GitHub.vscode-pull-request-github",
-				"timonwong.shellcheck",
-				"yzhang.markdown-all-in-one",
-				"ms-vscode.cpptools-extension-pack"
-			]
+                "GitHub.vscode-pull-request-github",
+                "timonwong.shellcheck",
+                "yzhang.markdown-all-in-one",
+                "ms-vscode.cpptools-extension-pack"
+            ]
         }
     },
     "runArgs": [
-        "--userns=keep-id",
-        "--volume=${localWorkspaceFolder}:/workspaces/qmk"
+        "--user=root",
+        "--volume=${localWorkspaceFolder}:/workspace:Z"
     ],
     // Set *default* container specific settings.json values on container create.
     // "settings": {
     // },
-    "workspaceFolder": "/workspaces/qmk",
+    "workspaceFolder": "/workspace",
     "workspaceMount": ""
 }

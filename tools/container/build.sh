@@ -4,7 +4,7 @@ set -o nounset
 set -o pipefail
 
 PROJECT_DIR="$(
-    cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null;
+    cd "$(dirname "${BASH_SOURCE[0]}")/../.." >/dev/null;
     pwd;
 )"
 
