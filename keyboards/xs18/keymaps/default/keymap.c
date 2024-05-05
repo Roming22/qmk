@@ -71,3 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef COMBO_ENABLE
 #include "layers/combos.h"
 #endif
+
+#ifdef RGBLIGHT_ENABLE
+#include "layers/leds.h"
+#endif
