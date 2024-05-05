@@ -13,3 +13,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 LT00,   LT10,       RT10,   RT00
     ),
 };
+
+#ifdef COMBO_ENABLE
+#include "layers/combos.h"
+#endif

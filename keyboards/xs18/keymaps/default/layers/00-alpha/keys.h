@@ -4,8 +4,8 @@
 // Alpha keys
 #define LTP0 LSFT_T(KC_TAB)
 #define LTR0 LSFT_T(KC_D)
-#define LTM0 LALT_T(KC_C)
-#define LTI0 LCTL_T(KC_L)
+#define LTM0 LALT_T(KC_L)
+#define LTI0 LCTL_T(KC_C)
 #define LHR0 KC_T
 #define LHM0 KC_A
 #define LHI0 KC_E
