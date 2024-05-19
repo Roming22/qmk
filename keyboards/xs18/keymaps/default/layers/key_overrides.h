@@ -4,6 +4,7 @@
 #pragma once
 
 #include "01-symbols/key_overrides.h"
+#include "02-fn_num/key_overrides.h"
 
 const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
 
@@ -15,5 +16,8 @@ const key_override_t **key_overrides = (const key_override_t *[]){
     &dollar_key_override,
     &dot_key_override,
     &hash_key_override,
+    &zero_key_override,
+    &one_key_override,
+    &two_key_override,
     NULL // Null terminate the array of overrides!
 };

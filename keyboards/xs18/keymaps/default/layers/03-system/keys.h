@@ -17,4 +17,4 @@
 #define RHI3 KC_LEFT
 #define RHM3 KC_DOWN
 #define RHR3 KC_RIGHT
-#define RT13 TO(0)
+#define RT13 TG(3)

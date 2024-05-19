@@ -17,4 +17,4 @@
 #define RHI2 KC_0
 #define RHM2 KC_1
 #define RHR2 KC_2
-#define RT12 TO(0)
+#define RT12 TG(2)

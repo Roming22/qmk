@@ -58,3 +58,92 @@ combo_t key_combos[] = {
     COMBO(RHI2_RHM2_combo, KC_3),
     COMBO(RHM2_RHR2_combo, KC_4),
 };
+
+// Workaround.
+// QMK currently does not support ModTap for US ANSI.
+// C.f. https://docs.qmk.fm/#/mod_tap?id=changing-tap-function
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LTM1:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_CIRCUMFLEX);  // Send '^' on SHIFT + tap
+                } else {
+                    tap_code16(KC_BACKSLASH);   // Send '\' on tap
+                }
+                return false;                   // Return false to ignore further processing of key
+            }
+            break;
+        case LTI1:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_PIPE);
+                } else {
+                    tap_code16(KC_UNDERSCORE);
+                }
+                return false;
+            }
+            break;
+        case RTI1:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_PLUS);
+                } else {
+                    tap_code16(KC_MINUS);
+                }
+                return false;
+            }
+            break;
+        case RTM1:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_ASTERISK);
+                } else {
+                    tap_code16(KC_SLASH);
+                }
+                return false;
+            }
+            break;
+        case RTR1:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_PERCENT);
+                } else {
+                    tap_code16(KC_EQUAL);
+                }
+                return false;
+            }
+            break;
+        case RTI2:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_AUDIO_MUTE);
+                } else {
+                    tap_code16(KC_7);
+                }
+                return false;
+            }
+            break;
+        case RTM2:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_AUDIO_VOL_UP);
+                } else {
+                    tap_code16(KC_8);
+                }
+                return false;
+            }
+            break;
+        case RTR2:
+            if (record->tap.count && record->event.pressed) {
+                if (get_mods() & MOD_MASK_SHIFT) {
+                    tap_code16(KC_MEDIA_PLAY_PAUSE);
+                } else {
+                    tap_code16(KC_9);
+                }
+                return false;
+            }
+            break;
+    }
+    return true;
+}
