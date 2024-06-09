@@ -6,7 +6,6 @@
 
 /* Split */
 #define SPLIT_HAND_MATRIX_GRID GP9, GP27
-#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
 #define MATRIX_MASKED
 
 /* Haptic hardware */
