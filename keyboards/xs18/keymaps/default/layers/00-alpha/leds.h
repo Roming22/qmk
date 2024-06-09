@@ -2,5 +2,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 const rgblight_segment_t PROGMEM led_layer0[] = RGBLIGHT_LAYER_SEGMENTS(
-    {3, 2, HSV_RED}
+    {0, 8, HSV_RED}
 );

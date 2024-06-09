@@ -3,10 +3,16 @@
 
 #pragma once
 
-// Toggle CAPS_WORD by pressing the 2 shift keys
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
-#define RGBLIGHT_DEFAULT_HUE 20
+#define COMBO_STRICT_TIMER
+#define COMBO_TERM 40
+
+// #define HOLD_ON_OTHER_KEY_PRESS
+#define PERMISSIVE_HOLD
+#define TAPPING_TERM 250
+
+#define RGBLIGHT_DEFAULT_HUE 0
 #define RGBLIGHT_DEFAULT_SAT 255
 #define RGBLIGHT_DEFAULT_VAL 200
 #define RGBLIGHT_LAYERS

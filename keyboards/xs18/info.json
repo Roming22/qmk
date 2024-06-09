@@ -38,7 +38,7 @@
     },
     "matrix_pins": {
         "cols": ["GP26", "GP22", "GP20", "GP23"],
-        "rows": ["GP6", "GP7", "GP9"]
+        "rows": ["GP5", "GP6", "GP9"]
     },
     "layout_aliases": {
         "LAYOUT": "LAYOUT_split_3x4_2"
