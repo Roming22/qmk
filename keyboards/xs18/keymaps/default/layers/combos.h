@@ -4,6 +4,7 @@
 #include "00-alpha/combos.h"
 #include "01-symbols/combos.h"
 #include "02-fn_num/combos.h"
+#include "04-shortcuts/combos.h"
 
 combo_t key_combos[] = {
     //--- ALPHA ---//
@@ -59,6 +60,10 @@ combo_t key_combos[] = {
     COMBO(RTM2_RTR2_combo, KC_6),
     COMBO(RHI2_RHM2_combo, KC_3),
     COMBO(RHM2_RHR2_combo, KC_4),
+
+    //--- SHORTCUTS ---//
+    // Right
+    COMBO(RTI4_RTR4_combo, KC_AUDIO_MUTE),
 };
 
 // Workaround.

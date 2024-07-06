@@ -20,14 +20,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [2] = LAYOUT(
         // Alpha/Symbols
-        _______,KC_LALT,KC_LCTL,KC_LSFT,                                RTI1,   RTM1,   RTR1,   _______,
-        _______,KC_NO,  KC_NO,  _______,                                RHI1,   RHM1,   RHR1,   _______,
+        KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI1,   RTM1,   RTR1,   RTP1,
+        KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI1,   RHM1,   RHR1,   RTP1,
                                 _______,    _______,        _______,    _______
     ),
     [3] = LAYOUT(
         // Symbols/Alpha
-        _______,LTR1,   LTM1,   LTI1,                                   KC_RSFT,KC_RCTL,KC_RALT,_______,
-        _______,LHR1,   LHM1,   LHI1,                                   _______,KC_NO,  KC_NO,  _______,
+        LTP1,   LTR1,   LTM1,   LTI1,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
+        LTP1,   LHR1,   LHM1,   LHI1,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
                                 _______,    _______,        _______,    _______
     ),
     [4] = LAYOUT(
@@ -38,32 +38,50 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [5] = LAYOUT(
         // Alpha/Fn+Num
-        _______,KC_LALT,KC_LCTL,KC_LSFT,                                RTI2,   RTM2,   RTR2,   _______,
-        _______,KC_NO,  _______,KC_NO,                                  RHI2,   RHM2,   RHR2,   _______,
+        KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI2,   RTM2,   RTR2,   RTP2,
+        KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI2,   RHM2,   RHR2,   RTP2,
                                 _______,    _______,        _______,    _______
     ),
     [6] = LAYOUT(
         // Fn+Num/Alpha
-        _______,LTR2,   LTM2,   LTI2,                                   KC_RSFT,KC_RCTL,KC_RALT,_______,
-        _______,LHR2,   LHM2,   LHI2,                                   KC_NO,  _______,KC_NO,  _______,
+        LTP2,   LTR2,   LTM2,   LTI2,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
+        LTP2,   LHR2,   LHM2,   LHI2,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
                                 _______,    _______,        _______,    _______
     ),
     [7] = LAYOUT(
         // System
-        _______,LTR3,   LTM3,   LTI3,                                   RTI3,   RTM3,   RTR3,   _______,
-        _______,LHR3,   LHM3,   LHI3,                                   RHI3,   RHM3,   RHR3,   _______,
+        LTP3,   LTR3,   LTM3,   LTI3,                                   RTI3,   RTM3,   RTR3,   RTP3,
+        LTP3,   LHR3,   LHM3,   LHI3,                                   RHI3,   RHM3,   RHR3,   RTP3,
                                 _______,    _______,        _______,    RT13
     ),
     [8] = LAYOUT(
         // Alpha/System
-        _______,KC_LALT,KC_LCTL,KC_LSFT,                                RTI3,   RTM3,   RTR3,   _______,
-        _______,_______,KC_NO,  KC_NO,                                  RHI3,   RHM3,   RHR3,   _______,
+        KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI3,   RTM3,   RTR3,   RTP3,
+        KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI3,   RHM3,   RHR3,   RTP3,
                                 _______,    _______,        _______,    _______
     ),
     [9] = LAYOUT(
         // System/Alpha
-        _______,LTR3,   LTM3,   LTI3,                                   KC_RSFT,KC_RCTL,KC_RALT,_______,
-        _______,LHR3,   LHM3,   LHI3,                                   KC_NO,  KC_NO,  _______,_______,
+        LTP3,   LTR3,   LTM3,   LTI3,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
+        LTP3,   LHR3,   LHM3,   LHI3,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
+                                _______,    _______,        _______,    _______
+    ),
+    [10] = LAYOUT(
+        // Shortcuts
+        LTP4,   LTR4,   LTM4,   LTI4,                                   RTI4,   RTM4,   RTR4,   RTP4,
+        LTP4,   LHR4,   LHM4,   LHI4,                                   RHI4,   RHM4,   RHR4,   RTP4,
+                                _______,    _______,        _______,    RT14
+    ),
+    [11] = LAYOUT(
+        // Alpha/Shortcuts
+        KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI4,   RTM4,   RTR4,   RTP4,
+        KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI4,   RHM4,   RHR4,   RTP4,
+                                _______,    _______,        _______,    _______
+    ),
+    [12] = LAYOUT(
+        // Shortcuts/Alpha
+        LTP4,   LTR4,   LTM4,   LTI4,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
+        LTP4,   LHR4,   LHM4,   LHI4,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
                                 _______,    _______,        _______,    _______
     ),
 };
