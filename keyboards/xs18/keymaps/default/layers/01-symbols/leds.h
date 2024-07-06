@@ -5,11 +5,11 @@
 const rgblight_segment_t PROGMEM led_layer1[] = RGBLIGHT_LAYER_SEGMENTS(
     {2, 4, HSV__ORANGE}
 );
-const rgblight_segment_t PROGMEM led_layer4[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM led_layer2[] = RGBLIGHT_LAYER_SEGMENTS(
     {2, 2, HSV_OFF},
     {4, 2, HSV__ORANGE}
 );
-const rgblight_segment_t PROGMEM led_layer5[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM led_layer3[] = RGBLIGHT_LAYER_SEGMENTS(
     {2, 2, HSV__ORANGE},
     {4, 2, HSV_OFF}
 );
