@@ -34,37 +34,37 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // Alpha/Symbols
         _______,KC_LALT,KC_LCTL,KC_LSFT,                                RTI1,   RTM1,   RTR1,   _______,
         _______,KC_NO,  KC_NO,  _______,                                RHI1,   RHM1,   RHR1,   _______,
-                                _______,    _______,        _______,    TG(1)
+                                _______,    _______,        _______,    _______
     ),
     [5] = LAYOUT(
         // Symbols/Alpha
         _______,LTR1,   LTM1,   LTI1,                                   KC_RSFT,KC_RCTL,KC_RALT,_______,
         _______,LHR1,   LHM1,   LHI1,                                   _______,KC_NO,  KC_NO,  _______,
-                                _______,    _______,        _______,    TG(1)
+                                _______,    _______,        _______,    _______
     ),
     [6] = LAYOUT(
         // Alpha/Fn+Num
         _______,KC_LALT,KC_LCTL,KC_LSFT,                                RTI2,   RTM2,   RTR2,   _______,
         _______,KC_NO,  _______,KC_NO,                                  RHI2,   RHM2,   RHR2,   _______,
-                                _______,    _______,        _______,    TG(2)
+                                _______,    _______,        _______,    _______
     ),
     [7] = LAYOUT(
         // Fn+Num/Alpha
         _______,LTR2,   LTM2,   LTI2,                                   KC_RSFT,KC_RCTL,KC_RALT,_______,
         _______,LHR2,   LHM2,   LHI2,                                   KC_NO,  _______,KC_NO,  _______,
-                                _______,    _______,        _______,    TG(2)
+                                _______,    _______,        _______,    _______
     ),
     [8] = LAYOUT(
         // Alpha/System
         _______,KC_LALT,KC_LCTL,KC_LSFT,                                RTI3,   RTM3,   RTR3,   _______,
         _______,_______,KC_NO,  KC_NO,                                  RHI3,   RHM3,   RHR3,   _______,
-                                _______,    _______,        _______,    TG(3)
+                                _______,    _______,        _______,    _______
     ),
     [9] = LAYOUT(
         // System/Alpha
         _______,LTR3,   LTM3,   LTI3,                                   KC_RSFT,KC_RCTL,KC_RALT,_______,
         _______,LHR3,   LHM3,   LHI3,                                   KC_NO,  KC_NO,  _______,_______,
-                                _______,    _______,        _______,    TG(3)
+                                _______,    _______,        _______,    _______
     ),
 };
 
