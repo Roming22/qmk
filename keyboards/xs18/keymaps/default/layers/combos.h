@@ -24,9 +24,9 @@ combo_t key_combos[] = {
     COMBO(RHM0_RHR0_combo, KC_G),
     COMBO(RHI0_RHR0_combo, KC_P),
     // To layers
-    COMBO(LHR0_RHR0_combo, TO(3)),
+    COMBO(LHR0_RHR0_combo, TO(1)),
     COMBO(LHM0_RHM0_combo, TO(2)),
-    COMBO(LHI0_RHI0_combo, TO(1)),
+    COMBO(LHI0_RHI0_combo, TO(3)),
 
     //--- Symbols ---//
     // Left
