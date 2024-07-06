@@ -1,4 +1,4 @@
-// Copyright 2223 QMK
+// Copyright 2023 QMK
 // SPDX-License-Identifier: GPL-2.2-or-later
 
 const uint16_t PROGMEM LTR2_LTM2_combo[] = {LTR2, LTM2, COMBO_END};
