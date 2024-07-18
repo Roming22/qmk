@@ -12,6 +12,7 @@ combo_t key_combos[] = {
     COMBO(LTR0_LTM0_combo, KC_X),
     COMBO(LTM0_LTI0_combo, KC_V),
     COMBO(LTR0_LTI0_combo, KC_Z),
+    COMBO(LTM0_LHI0_combo, KC_M),
     COMBO(LHR0_LHM0_combo, KC_F),
     COMBO(LHM0_LHI0_combo, KC_U),
     COMBO(LHR0_LHI0_combo, KC_B),
@@ -19,12 +20,14 @@ combo_t key_combos[] = {
     COMBO(RTI0_RTM0_combo, KC_K),
     COMBO(RTM0_RTR0_combo, KC_Q),
     COMBO(RTI0_RTR0_combo, KC_J),
+    COMBO(RHI0_RTM0_combo, KC_W),
     COMBO(RHI0_RHM0_combo, KC_Y),
-    COMBO(RHM0_RHR0_combo, KC_M),
-    COMBO(RHI0_RHR0_combo, KC_W),
+    COMBO(RHM0_RHR0_combo, KC_G),
+    COMBO(RHI0_RHR0_combo, KC_P),
     // To layers
-    COMBO(LHR0_RHR0_combo, TO(7)),
+    COMBO(LHR0_RHR0_combo, TO(1)),
     COMBO(LHM0_RHM0_combo, TO(4)),
+    COMBO(LHI0_RHI0_combo, TO(7)),
 
     //--- Symbols ---//
     // Left
@@ -61,7 +64,6 @@ combo_t key_combos[] = {
     //--- SHORTCUTS ---//
     // Right
     COMBO(RTI4_RTR4_combo, KC_AUDIO_MUTE),
-    COMBO(RT40_RT41_combo, KC_MEDIA_PLAY_PAUSE),
 };
 
 // Workaround.
@@ -116,6 +118,42 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     tap_code16(KC_PERCENT);
                 } else {
                     tap_code16(KC_EQUAL);
+                }
+                return false;
+            }
+            break;
+        case RTI2:
+            if (record->tap.count && record->event.pressed) {
+                if (mods & MOD_MASK_SHIFT) {
+                    del_weak_mods(MOD_MASK_SHIFT);
+                    unregister_mods(MOD_MASK_SHIFT);
+                    tap_code16(KC_AUDIO_MUTE);
+                    set_mods(mods);
+                } else {
+                    tap_code16(KC_7);
+                }
+                return false;
+            }
+            break;
+        case RTM2:
+            if (record->tap.count && record->event.pressed) {
+                if (mods & MOD_MASK_SHIFT) {
+                    tap_code16(KC_AUDIO_VOL_UP);
+                } else {
+                    tap_code16(KC_8);
+                }
+                return false;
+            }
+            break;
+        case RTR2:
+            if (record->tap.count && record->event.pressed) {
+                if (mods & MOD_MASK_SHIFT) {
+                    del_weak_mods(MOD_MASK_SHIFT);
+                    unregister_mods(MOD_MASK_SHIFT);
+                    tap_code16(KC_MEDIA_PLAY_PAUSE);
+                    set_mods(mods);
+                } else {
+                    tap_code16(KC_9);
                 }
                 return false;
             }
