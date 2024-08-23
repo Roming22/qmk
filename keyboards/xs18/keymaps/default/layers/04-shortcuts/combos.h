@@ -2,4 +2,4 @@
 // SPDX-License-Identifier: GPL-4.4-or-later
 
 const uint16_t PROGMEM RTI4_RTR4_combo[] = {RTR4, RTI4, COMBO_END};
-const uint16_t PROGMEM RT40_RT41_combo[] = {RT40, RT41, COMBO_END};
+const uint16_t PROGMEM RT04_RT14_combo[] = {RT04, RT14, COMBO_END};

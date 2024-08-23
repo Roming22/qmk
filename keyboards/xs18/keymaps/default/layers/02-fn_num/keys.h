@@ -1,7 +1,6 @@
 // Copyright 2023 QMK
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-// Fn and num keys
 #define LTP2 KC_COMMA
 #define LTR2 LALT_T(KC_F1)
 #define LTM2 LCTL_T(KC_F2)
@@ -9,11 +8,11 @@
 #define LHR2 KC_F10
 #define LHM2 KC_F11
 #define LHI2 KC_F12
-#define LT20 TO(0)
-#define LT21 KC_LEFT_SHIFT
+#define LT02 TO(0)
+#define LT12 KC_LEFT_SHIFT
 
-#define RT21 KC_LGUI
-#define RT20 TO(4)
+#define RT12 KC_LGUI
+#define RT02 TO(4)
 #define RHI2 KC_0
 #define RHM2 KC_1
 #define RHR2 KC_2

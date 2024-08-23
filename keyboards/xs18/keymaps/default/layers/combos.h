@@ -61,7 +61,7 @@ combo_t key_combos[] = {
     //--- SHORTCUTS ---//
     // Right
     COMBO(RTI4_RTR4_combo, KC_AUDIO_MUTE),
-    COMBO(RT40_RT41_combo, KC_MEDIA_PLAY_PAUSE),
+    COMBO(RT04_RT14_combo, KC_MEDIA_PLAY_PAUSE),
 };
 
 // Workaround.

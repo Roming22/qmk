@@ -6,6 +6,7 @@
 #include "02-fn_num/leds.h"
 #include "03-system/leds.h"
 #include "04-shortcuts/leds.h"
+#include "05-gaming/leds.h"
 
 // Now define the array of layers. Later layers take precedence
 const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
@@ -21,7 +22,8 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     led_layer9,
     led_layer10,
     led_layer11,
-    led_layer12
+    led_layer12,
+    led_layer13
 );
 
 void keyboard_post_init_user(void) {
@@ -53,5 +55,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     rgblight_set_layer_state(10, layer_state_cmp(state, 10));
     rgblight_set_layer_state(11, layer_state_cmp(state, 11));
     rgblight_set_layer_state(12, layer_state_cmp(state, 12));
+    rgblight_set_layer_state(12, layer_state_cmp(state, 13));
     return state;
 }
