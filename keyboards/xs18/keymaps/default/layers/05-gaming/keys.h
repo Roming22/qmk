@@ -12,7 +12,7 @@
 #define LT05 KC_SPACE
 #define LT15 KC_TAB
 
-#define RT15 KC_NO
+#define RT15 KC_ESCAPE
 #define RT05 TO(0)
 #define RHI5 KC_LEFT
 #define RHM5 KC_DOWN

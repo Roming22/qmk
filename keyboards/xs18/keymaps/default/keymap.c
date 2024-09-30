@@ -22,13 +22,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // Alpha/Symbols
         KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI1,   RTM1,   RTR1,   RTP1,
         KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI1,   RHM1,   RHR1,   RTP1,
-                                _______,    _______,        _______,    _______
+                                _______,    _______,        _______,    TO(1)
     ),
     [3] = LAYOUT(
         // Symbols/Alpha
         LTP1,   LTR1,   LTM1,   LTI1,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
         LTP1,   LHR1,   LHM1,   LHI1,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
-                                _______,    _______,        _______,    _______
+                                _______,    _______,        _______,    TO(1)
     ),
     [4] = LAYOUT(
         // Fn+Num
@@ -40,13 +40,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // Alpha/Fn+Num
         KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI2,   RTM2,   RTR2,   RTP2,
         KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI2,   RHM2,   RHR2,   RTP2,
-                                _______,    _______,        _______,    _______
+                                _______,    _______,        _______,    TO(4)
     ),
     [6] = LAYOUT(
         // Fn+Num/Alpha
         LTP2,   LTR2,   LTM2,   LTI2,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
         LTP2,   LHR2,   LHM2,   LHI2,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
-                                _______,    _______,        _______,    _______
+                                _______,    _______,        _______,    TO(4)
     ),
     [7] = LAYOUT(
         // System
@@ -58,13 +58,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // Alpha/System
         KC_NO,  KC_LALT,KC_LCTL,KC_LSFT,                                RTI3,   RTM3,   RTR3,   RTP3,
         KC_NO,  KC_NO,  KC_NO,  KC_NO,                                  RHI3,   RHM3,   RHR3,   RTP3,
-                                _______,    _______,        _______,    _______
+                                _______,    _______,        _______,    TO(7)
     ),
     [9] = LAYOUT(
         // System/Alpha
         LTP3,   LTR3,   LTM3,   LTI3,                                   KC_RSFT,KC_RCTL,KC_RALT,KC_NO,
         LTP3,   LHR3,   LHM3,   LHI3,                                   KC_NO,  KC_NO,  KC_NO,  KC_NO,
-                                _______,    _______,        _______,    _______
+                                _______,    _______,        _______,    TO(7)
     ),
     [10] = LAYOUT(
         // Shortcuts
@@ -85,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 _______,    _______,        _______,    _______
     ),
     [13] = LAYOUT(
-        // Shortcuts
+        // Gaming
         LTP5,   LTR5,   LTM5,   LTI5,                                   RTI5,   RTM5,   RTR5,   RTP5,
         LTP5,   LHR5,   LHM5,   LHI5,                                   RHI5,   RHM5,   RHR5,   RTP5,
                                 LT05,       LT15,           RT15,       RT05
