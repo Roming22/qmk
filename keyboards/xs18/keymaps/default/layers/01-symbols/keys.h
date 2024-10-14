@@ -9,7 +9,7 @@
 #define LHM1 KC_DOLLAR
 #define LHI1 KC_AMPERSAND
 #define LT01 TO(1)
-#define LT11 KC_LEFT_SHIFT
+#define LT11 KC_LGUI
 
 #define RT11 KC_LGUI
 #define RT01 TO(0)

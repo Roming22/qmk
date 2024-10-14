@@ -17,6 +17,4 @@ const uint16_t PROGMEM RHM0_RHR0_combo[] = {RHR0, RHM0, COMBO_END};
 const uint16_t PROGMEM RHI0_RHM0_combo[] = {RHM0, RHI0, COMBO_END};
 const uint16_t PROGMEM RHI0_RHR0_combo[] = {RHR0, RHI0, COMBO_END};
 
-const uint16_t PROGMEM LHR0_RHR0_combo[] = {LHR0, RHR0, COMBO_END};
-const uint16_t PROGMEM LHM0_RHM0_combo[] = {LHM0, RHM0, COMBO_END};
-const uint16_t PROGMEM LHI0_RHI0_combo[] = {LHI0, RHI0, COMBO_END};
+const uint16_t PROGMEM LTP0_RTP0_combo[] = {LTP0, RTP0, COMBO_END};
