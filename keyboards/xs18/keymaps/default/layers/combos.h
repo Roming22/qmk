@@ -5,6 +5,7 @@
 #include "01-symbols/combos.h"
 #include "02-fn_num/combos.h"
 #include "04-shortcuts/combos.h"
+#include "05-gaming/combos.h"
 
 combo_t key_combos[] = {
     //--- ALPHA ---//
@@ -61,6 +62,9 @@ combo_t key_combos[] = {
     // Right
     COMBO(RTI4_RTR4_combo, KC_AUDIO_MUTE),
     COMBO(RT04_RT14_combo, KC_MEDIA_PLAY_PAUSE),
+
+    //--- GAMING ---//
+    COMBO(LTP5_RTP5_combo, TO(0)),
 };
 
 // Workaround.

@@ -12,8 +12,8 @@
 #define LT05 KC_SPACE
 #define LT15 KC_TAB
 
-#define RT15 KC_ESCAPE
-#define RT05 TO(0)
+#define RT15 KC_LCTL
+#define RT05 KC_ENTER
 #define RHI5 KC_LEFT
 #define RHM5 KC_DOWN
 #define RHR5 KC_RIGHT
@@ -22,4 +22,4 @@
 #define RTI5 KC_NO
 #define RTM5 KC_UP
 #define RTR5 KC_P
-#define RTP5 KC_NO
+#define RTP5 KC_ESCAPE
