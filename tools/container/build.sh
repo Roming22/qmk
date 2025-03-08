@@ -3,8 +3,12 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+SCRIPT_DIR="$(
+    cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null;
+    pwd;
+)"
 PROJECT_DIR="$(
-    cd "$(dirname "${BASH_SOURCE[0]}")/../.." >/dev/null;
+    cd "$SCRIPT_DIR/../.." >/dev/null;
     pwd;
 )"
 
@@ -14,6 +18,6 @@ PROJECT_DIR="$(
 TMPDIR="$(TMPDIR="$HOME" mktemp -d)"
 export TMPDIR
 
-podman build -f "$PROJECT_DIR/.devcontainer/Dockerfile" -t qmk_devenv "$PROJECT_DIR"
+podman build -f "$SCRIPT_DIR/Dockerfile" -t qmk_devenv "$PROJECT_DIR"
 
 rm -rf "$TMPDIR"

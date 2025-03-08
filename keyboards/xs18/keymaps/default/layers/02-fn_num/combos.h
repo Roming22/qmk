@@ -1,20 +1,40 @@
 // Copyright 2023 QMK
 // SPDX-License-Identifier: GPL-2.2-or-later
 
-const uint16_t PROGMEM LTR2_LTM2_combo[] = {LTR2, LTM2, COMBO_END};
-const uint16_t PROGMEM LTM2_LTI2_combo[] = {LTM2, LTI2, COMBO_END};
-const uint16_t PROGMEM LTR2_LTI2_combo[] = {LTR2, LTI2, COMBO_END};
-const uint16_t PROGMEM LTR2_LTM2_LTI2_combo[] = {LTR2, LTM2, LTI2, COMBO_END};
-const uint16_t PROGMEM LHR2_LHM2_combo[] = {LHR2, LHM2, COMBO_END};
-const uint16_t PROGMEM LHM2_LHI2_combo[] = {LHM2, LHI2, COMBO_END};
-const uint16_t PROGMEM LHR2_LHI2_combo[] = {LHR2, LHI2, COMBO_END};
-const uint16_t PROGMEM LHR2_LHM2_LHI2_combo[] = {LHR2, LHM2, LHI2, COMBO_END};
+int process_combo_layer2(uint16_t keycode) {
+    int combo_keycode = KC_NO;
 
-const uint16_t PROGMEM RTM2_RTR2_combo[] = {RTR2, RTM2, COMBO_END};
-const uint16_t PROGMEM RTI2_RTM2_combo[] = {RTM2, RTI2, COMBO_END};
-const uint16_t PROGMEM RTI2_RTR2_combo[] = {RTR2, RTI2, COMBO_END};
-const uint16_t PROGMEM RTI2_RTM2_RTR2_combo[] = {RTR2, RTM2, RTI2, COMBO_END};
-const uint16_t PROGMEM RHM2_RHR2_combo[] = {RHR2, RHM2, COMBO_END};
-const uint16_t PROGMEM RHI2_RHM2_combo[] = {RHM2, RHI2, COMBO_END};
-const uint16_t PROGMEM RHI2_RHR2_combo[] = {RHR2, RHI2, COMBO_END};
-const uint16_t PROGMEM RHI2_RHM2_RHR2_combo[] = {RHR2, RHM2, RHI2, COMBO_END};
+    switch (keycode) {
+        case CB_LTR_LTM:
+            combo_keycode = KC_F4;
+            break;
+        case CB_LTM_LTI:
+            combo_keycode = KC_F5;
+            break;
+        case CB_LTR_LTI:
+            combo_keycode = KC_6;
+            break;
+        case CB_LHR_LHM:
+            combo_keycode = KC_F7;
+            break;
+        case CB_LHM_LHI:
+            combo_keycode = KC_F8;
+            break;
+        case CB_LHR_LHI:
+            combo_keycode = KC_F9;
+            break;
+        case CB_RTI_RTM:
+            combo_keycode = KC_5;
+            break;
+        case CB_RTM_RTR:
+            combo_keycode = KC_6;
+            break;
+        case CB_RHI_RHM:
+            combo_keycode = KC_3;
+            break;
+        case CB_RHM_RHR:
+            combo_keycode = KC_4;
+            break;
+    }
+    return combo_keycode;
+}
