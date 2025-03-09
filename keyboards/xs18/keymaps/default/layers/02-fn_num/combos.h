@@ -35,6 +35,9 @@ int process_combo_layer2(uint16_t keycode) {
         case CB_RHM_RHR:
             combo_keycode = KC_4;
             break;
+        case CB_LHP_RHP:
+            layer_clear();
+            break;
     }
     return combo_keycode;
 }

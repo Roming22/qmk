@@ -15,6 +15,7 @@ enum my_keycodes {
     CB_RHI_RHM,
     CB_RHM_RHR,
     CB_RHI_RHR,
+    CB_LHP_RHP,
     CB_RH0_RH1,
     CB_END,
 };
@@ -41,6 +42,9 @@ combo_t key_combos[] = {
     COMBO(RHI0_RHM0_combo, CB_RHI_RHM),
     COMBO(RHM0_RHR0_combo, CB_RHM_RHR),
     COMBO(RHI0_RHR0_combo, CB_RHI_RHR),
+    COMBO(RC00_RC10_combo, CB_RH0_RH1),
+    // Mixed
+    COMBO(LHP0_RHP0_combo, CB_LHP_RHP),
 };
 
 void process_custom_combo(uint16_t keycode, keyrecord_t *record) {
@@ -69,6 +73,9 @@ void process_custom_combo(uint16_t keycode, keyrecord_t *record) {
             case 11:
             case 12:
                 combo_keycode = process_combo_layer4(keycode);;
+                break;
+            case 13:
+                combo_keycode = process_combo_layer5(keycode);;
                 break;
         }
         register_code16(combo_keycode);

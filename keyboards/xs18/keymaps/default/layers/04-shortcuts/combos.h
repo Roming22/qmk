@@ -11,6 +11,9 @@ int process_combo_layer4(uint16_t keycode) {
         case CB_RH0_RH1:
             combo_keycode = KC_MEDIA_PLAY_PAUSE;
             break;
+        case CB_LHP_RHP:
+            layer_clear();
+            break;
     }
     return combo_keycode;
 }
