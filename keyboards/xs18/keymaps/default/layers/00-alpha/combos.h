@@ -17,7 +17,7 @@ const uint16_t PROGMEM RHM0_RHR0_combo[] = {RHR0, RHM0, COMBO_END};
 const uint16_t PROGMEM RHI0_RHM0_combo[] = {RHM0, RHI0, COMBO_END};
 const uint16_t PROGMEM RHI0_RHR0_combo[] = {RHR0, RHI0, COMBO_END};
 
-const uint16_t PROGMEM LTP0_RTP0_combo[] = {LTP0, RTP0, COMBO_END};
+const uint16_t PROGMEM LHP0_RHP0_combo[] = {LHP0, RHP0, COMBO_END};
 
 int process_combo_layer0(uint16_t keycode) {
     int combo_keycode = KC_NO;
@@ -58,6 +58,9 @@ int process_combo_layer0(uint16_t keycode) {
             break;
         case CB_RHI_RHR:
             combo_keycode = KC_W;
+            break;
+        case CB_LHP_RHP:
+            layer_on(13);
             break;
     }
     return combo_keycode;
