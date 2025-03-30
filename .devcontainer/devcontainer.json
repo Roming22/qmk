@@ -17,6 +17,9 @@
             ]
         }
     },
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:/workspace/tools/container/bin"
+    },
     "runArgs": [
         "--user=root",
         "--volume=${localWorkspaceFolder}:/workspace:Z"
